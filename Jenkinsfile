@@ -40,7 +40,7 @@ pipeline {
                       --name ${CONTAINER_NAME} \
                       --memory=512m \
                       --cpus=0.5 \
-                      -p 8080:8080 \
+                      -p 8080:80 \
                       ${IMAGE_NAME}:${BUILD_NUMBER}
                 '''
             }
